@@ -42,5 +42,23 @@ class Students
         {
             System.out.println("Student " + (i + 1) + ": " + marksList[i]);
         }
+        
+        //F5 : Print the highest and lowest marks
+        int highestMark = marksList[0];
+        int lowestMark = marksList[0];
+        for (int i = 1; i < 30; i++) 
+        {
+            if (marksList[i] > highestMark)//check if current mark is greater than previously recorded highest mark
+            {
+                highestMark = marksList[i];
+            }
+            if (marksList[i] < lowestMark)//check if current mark is lower than previously recorded highest mark
+            {
+                lowestMark = marksList[i];
+            }
+        }
+        System.out.println("Highest mark : " + highestMark);
+        System.out.println("Lowest mark: " + lowestMark);
+        
     }
 }
