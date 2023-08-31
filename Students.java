@@ -8,16 +8,31 @@ class Students
         System.out.println("Please enter the assignment name: ");
         String assignmentName = scanner.nextLine();
 
-        //F2 : input students marks for assignment 
+        //F2 : input students' marks for assignment 
         int[] marksList = new int[30];
-        for (int i=0; i<30; i++)
+        for (int i=0; i<30;)
         { 
             System.out.println("Enter mark for student " + (i + 1) + ": ");
+            //use try catch to ensure only correct type of data is accepted as input 
+            try
+            {
                 int mark = scanner.nextInt();
                 if (mark >=0 && mark <=30)
                 {
-                    marksList[i] = mark;       
+                    marksList[i] = mark; 
+                    i++;// increment i only if input is valid
+                }
+         //F3 : shows error message for invalid input
+                else
+                {
+                    System.out.println("Invalid input. Mark must be between 0 and 30.");   
                 }
             }
+            catch(Exception e)
+            {
+                    System.out.println("Invalid input. Please enter a valid number.");
+                    scanner.nextLine(); // To clear the invalid input from the buffer
+            }
+        }
     }
 }
