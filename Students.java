@@ -34,5 +34,13 @@ class Students
                     scanner.nextLine(); // To clear the invalid input from the buffer
             }
         }
+        //F4 : assignment name followed by the marks of the students
+        System.out.println("Assignment Name: " + assignmentName);
+        System.out.println("The students' marks are as follows:");
+        
+        for (int i = 0; i < 30; i++)
+        {
+            System.out.println("Student " + (i + 1) + ": " + marksList[i]);
+        }
     }
 }
