@@ -30,10 +30,12 @@ class Students
             }
             catch(Exception e)
             {
-                    System.out.println("Invalid input. Please enter a valid number.");
+                    System.out.println("Invalid input! Please enter a valid number.");
                     scanner.nextLine(); // To clear the invalid input from the buffer
+
             }
         }
+        
         //F4 : assignment name followed by the marks of the students
         System.out.println("Assignment Name: " + assignmentName);
         System.out.println("The students' marks are as follows:");
@@ -60,5 +62,23 @@ class Students
         System.out.println("Highest mark : " + highestMark);
         System.out.println("Lowest mark: " + lowestMark);
         
+        //F6 : calculate the mean and standard deviation of the marks
+        double sum = 0;
+        for (int mark : marksList) {
+            sum += mark;
+        }
+        double mean = sum / 30;
+        double varianceSum = 0;
+        for (int mark : marksList) {
+            varianceSum += Math.pow(mark - mean, 2);
+        }
+        double variance = varianceSum / 30;
+        double standardDeviation = Math.sqrt(variance);
+        
+        System.out.println("Mean: " + mean);
+        System.out.println("Standard Deviation: " + standardDeviation);
+        
+        
+        scanner.close();//to close scanner instance
     }
 }
