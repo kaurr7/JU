@@ -1,4 +1,10 @@
 import java.util.Scanner;
+/**
+ * write a description of class students here.
+ * 
+ * @author (Ramandeep kaur)
+ * @version (31/08/2023)
+ */
 class Students
 {
     public static void main(String args[])
