@@ -4,6 +4,7 @@ import java.util.Scanner;
  * 
  * @author (Ramandeep kaur)
  * @version (31/08/2023)
+ * @github link (https://github.com/kaurr7/JU.git)
  */
 class Students
 {

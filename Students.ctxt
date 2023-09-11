@@ -1,5 +1,6 @@
 #BlueJ class context
 comment0.target=Students
+comment0.text=\r\n\ write\ a\ description\ of\ class\ students\ here.\r\n\ \r\n\ @author\ (Ramandeep\ kaur)\r\n\ @version\ (31/08/2023)\r\n\ @github\ link\ (https\://github.com/kaurr7/JU.git)\r\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
 numComments=2
